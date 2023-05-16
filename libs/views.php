@@ -10,7 +10,10 @@ class Views
 	public $active;
 	public $user;
 	public $msg;
-
+	public $sociales;
+	public $getEcoles;
+	public $revenue;
+	public $agriculture;
 	function __construct()
 	{
 		// echo "ceci est les views <br>";

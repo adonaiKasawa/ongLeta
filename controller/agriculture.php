@@ -17,6 +17,7 @@ class Agriculture extends Controller
     $this->view->title = 'App | Page D\'accueil';
     $this->view->active = 'home';
     $this->view->user = $this->user;
+    $this->view->agriculture = $this->model->getAgriculture();
     $this->view->rende('agriculture/index');
   }
 }

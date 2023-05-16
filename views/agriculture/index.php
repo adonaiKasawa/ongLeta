@@ -1,4 +1,4 @@
-<section class="breadcrumb-option">
+<!-- <section class="breadcrumb-option">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -12,18 +12,18 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section class="about spad">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="about__pic">
-					<img src="<?= URL ?>public/ong_img/11.jpg" alt="">
+					<img src="<?= URL ?>public/ong_img/ONG/IMG_7830.jpg" alt="">
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="about__item">
 					<h4>Qui nous sommes ?</h4>
@@ -42,7 +42,7 @@
 					<p>Une maison à deux ou trois étages est le moyen idéal pour maximiser le morceau de terre sur lequel se trouve notre maison, mais pour les personnes âgées ou infirmes.</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </section>
 
@@ -53,11 +53,11 @@
 				<div class="testimonial__text">
 					<span class="icon_quotations"></span>
 					<p>“Vous sortez après le travail ? Emportez votre fer à friser au butane avec vous au bureau, chauffez-le,
-coiffez-vous avant de quitter le bureau et vous n'aurez pas à faire un voyage de retour à la maison.”
+						coiffez-vous avant de quitter le bureau et vous n'aurez pas à faire un voyage de retour à la maison.”
 					</p>
 					<div class="testimonial__author">
 						<div class="testimonial__author__pic">
-							<img src="<?= URL?>public/img/about/testimonial-author.jpg" alt="">
+							<img src="<?= URL ?>public/img/about/testimonial-author.jpg" alt="">
 						</div>
 						<div class="testimonial__author__text">
 							<h5>Augusta Schultz</h5>
@@ -72,3 +72,29 @@ coiffez-vous avant de quitter le bureau et vous n'aurez pas à faire un voyage d
 		</div>
 	</div>
 </section>
+
+
+<div class="container mt-5">
+	<div class="row">
+		<?php
+		if (!empty($this->agriculture)) {
+			foreach ($this->agriculture as $key) {
+		?>
+
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="blog__item">
+						<div class="blog__item__pic set-bg" data-setbg="<?= URL ?>public/ong_img/<?= $key['photo_agriculture'] ?>" style="background-image: url(&quot;<?= URL ?>public/ong_img/<?= $key['photo_agriculture'] ?>&quot;);"></div>
+						<div class="blog__item__text">
+							<span><img src="<?= URL ?>public/img/icon/calendar.png" alt=""> <?= $key["date_recolte"] ?></span>
+							<h5><?= $key["produit"] ?></h5>
+							<!-- <a href="#">Read More</a> -->
+						</div>
+					</div>
+				</div>
+
+		<?php
+			}
+		}
+		?>
+	</div>
+</div>

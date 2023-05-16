@@ -11,10 +11,10 @@ class ecoles_Model extends Model
     parent::__construct();
   }
 
-  public function find()
+  public function getEcoles()
   {
     # code...
     // exemple
-    //return $this->db->select("SELECT * FROM name_table");
+    return $this->db->select("SELECT * FROM ecoles");
   }
 }

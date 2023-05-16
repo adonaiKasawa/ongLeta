@@ -9,7 +9,7 @@ define('DB_HOST', 'localhost');
 define('DB_PORT', '');
 define('DB_NAME', 'ongleta');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'Hack_201123');
 
 define('SECRET_KEY_AT', 'sdfghbfdqsfgg5gc458xcv4n58nb');
 define('SECRET_KEY_RT', '84df56g4s65d4gb56xfdzerdfdgs');

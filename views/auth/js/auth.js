@@ -22,7 +22,7 @@ $(document).ready(function () {
             alert(data);
             console.log(data);
             switch (data) {
-              case 404:
+              case 400:
                 
                 break;
               case 401:
